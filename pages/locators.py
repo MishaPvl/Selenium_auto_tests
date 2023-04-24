@@ -9,9 +9,11 @@ class LoginPageLocators():
 
 class ProductPageLocators():
     BUTTON_ADD_TO_BASKET = (By.CSS_SELECTOR, 'button.btn-add-to-basket')
-    PRODUCT_PRICE_ON_PAGE = (By.CSS_SELECTOR, '.product_main .price_color')
-    PRODUCT_NAME_ON_PAGE = (By.CSS_SELECTOR, '.product_main h1')
-    MESSAGE_SUCCESS_PRICE = (By.CSS_SELECTOR,'div.alert-info')
-    MESSAGE_SUCCESS_NAME = (By.CSS_SELECTOR, 'div.alert-success')
-    PRODUCT_PRICE_ON_BASKET = (By.CSS_SELECTOR, 'div.alertinner strong')
-    PRODUCT_NAME_ON_BASKET = (By.CSS_SELECTOR, 'div.alertinner p strong')
+    BOOK_NAME_ON_BASKET = (By.CSS_SELECTOR, '.alert-success:first-child')
+    PRICE_ON_BASKET = (By.CSS_SELECTOR, '.alert-info strong')
+    BOOK_PRICE_ON_PAGE = (By.CSS_SELECTOR, '.product_main > p.price_color')
+    BOOK_NAME_ON_PAGE = (By.CSS_SELECTOR, '.product_main > h1')
+    SUCCESS_MESSAGES = (By.ID, 'messages')
+
+    
+    

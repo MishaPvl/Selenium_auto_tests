@@ -14,7 +14,12 @@ class ProductPageLocators():
     BOOK_PRICE_ON_PAGE = (By.CSS_SELECTOR, '.product_main > p.price_color')
     BOOK_NAME_ON_PAGE = (By.CSS_SELECTOR, '.product_main > h1')
     SUCCESS_MESSAGES = (By.ID, 'messages')
+    SUCCESS_MESSAGE = (By.XPATH, '//*[@id="messages"]/div[1]')
     
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, '#login_link')
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+
 
     
     

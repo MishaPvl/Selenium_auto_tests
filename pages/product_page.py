@@ -10,14 +10,14 @@ class ProductPage(BasePage):
 
     def name_of_the_book_in_basket_and_main_page_should_be_same(self):
         name_on_basket = self.browser.find_element(*ProductPageLocators.BOOK_NAME_ON_BASKET).text
-        assert self.name_on_main_page == name_on_basket, 'name of the book in the basket and on the page are different'
+        assert self.name_on_main_page == name_on_basket, 'Name of the book in the basket and on the page are different'
     
     def price_of_the_book_in_basket_and_main_page_should_be_same(self):
         price_on_basket = self.browser.find_element(*ProductPageLocators.PRICE_ON_BASKET).text
-        assert price_on_basket == self.price_on_main_page, 'price of the book in the basket and on the page are different'
+        assert price_on_basket == self.price_on_main_page, 'Price of the book in the basket and on the page are different'
 
     def success_messages_should_be_presented(self):
-        assert self.is_element_present(*ProductPageLocators.SUCCESS_MESSAGES), 'success messages is not presented'
+        assert self.is_element_present(*ProductPageLocators.SUCCESS_MESSAGES), 'Success messages is not presented'
 
     def should_not_be_success_message(self):
         assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), 'Success message is presented, but should not be'
